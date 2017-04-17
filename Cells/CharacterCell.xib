@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ACMESecretAgentBB_Reg.ttf">
+            <string>ACMESecretAgentBB</string>
+        </array>
+        <array key="acmesa.TTF">
+            <string>ACMESecretAgent</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterCell" rowHeight="88" id="gby-Kx-bVo" customClass="CharacterCell" customModule="SuperHeroDatabase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gby-Kx-bVo" id="U7w-Q8-h3Z">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pkH-U1-FhY">
+                        <rect key="frame" x="8" y="8" width="72" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="7vh-Hu-2Wt"/>
+                            <constraint firstAttribute="width" constant="72" id="VT2-O8-Khe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXa-Y5-LMC">
+                        <rect key="frame" x="80" y="51.5" width="240" height="28.5"/>
+                        <fontDescription key="fontDescription" name="ACMESecretAgentBB" family="ACME Secret Agent BB" pointSize="22"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-Ol-3gH">
+                        <rect key="frame" x="80" y="32" width="240" height="24.5"/>
+                        <fontDescription key="fontDescription" name="ACMESecretAgent" family="A.C.M.E. Secret Agent" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cNY-Jt-1kf">
+                        <rect key="frame" x="59" y="59" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="79H-vV-ajS"/>
+                            <constraint firstAttribute="width" constant="25" id="Bp4-mD-Jax"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xOe-Ol-3gH" firstAttribute="leading" secondItem="pkH-U1-FhY" secondAttribute="trailing" id="4td-O0-2be"/>
+                    <constraint firstItem="pkH-U1-FhY" firstAttribute="leading" secondItem="U7w-Q8-h3Z" secondAttribute="leadingMargin" id="4u9-MY-eOG"/>
+                    <constraint firstItem="wXa-Y5-LMC" firstAttribute="top" secondItem="xOe-Ol-3gH" secondAttribute="bottom" constant="-5" id="4zC-Gx-cOQ"/>
+                    <constraint firstItem="xOe-Ol-3gH" firstAttribute="centerY" secondItem="U7w-Q8-h3Z" secondAttribute="centerY" id="M1J-YP-C42"/>
+                    <constraint firstItem="cNY-Jt-1kf" firstAttribute="trailing" secondItem="pkH-U1-FhY" secondAttribute="trailing" constant="4" id="NUL-bZ-wyb"/>
+                    <constraint firstItem="pkH-U1-FhY" firstAttribute="top" secondItem="U7w-Q8-h3Z" secondAttribute="topMargin" id="RxW-qD-gXt"/>
+                    <constraint firstAttribute="trailing" secondItem="xOe-Ol-3gH" secondAttribute="trailing" id="cZ0-mL-d4V"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pkH-U1-FhY" secondAttribute="bottom" id="lj6-0T-BgU"/>
+                    <constraint firstItem="cNY-Jt-1kf" firstAttribute="baseline" secondItem="pkH-U1-FhY" secondAttribute="baseline" constant="4" id="oi5-cF-Nrx"/>
+                    <constraint firstAttribute="bottom" secondItem="wXa-Y5-LMC" secondAttribute="bottom" constant="8" id="u2g-sJ-JK2"/>
+                    <constraint firstAttribute="trailing" secondItem="wXa-Y5-LMC" secondAttribute="trailing" id="v9g-tS-0de"/>
+                    <constraint firstItem="wXa-Y5-LMC" firstAttribute="leading" secondItem="pkH-U1-FhY" secondAttribute="trailing" id="zzT-pm-oym"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="characterImageView" destination="pkH-U1-FhY" id="XLz-tz-I27"/>
+                <outlet property="nameLabel" destination="xOe-Ol-3gH" id="4BF-53-SYO"/>
+                <outlet property="publisherImageView" destination="cNY-Jt-1kf" id="UOY-eC-a2P"/>
+                <outlet property="subNameLabel" destination="wXa-Y5-LMC" id="fXi-9y-9hc"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="99"/>
+        </tableViewCell>
+    </objects>
+</document>
